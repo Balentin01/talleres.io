@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capotillo Talleres</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <h1>Capotillo Talleres</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Talle.html">Talleres</a></li>
+        <li><a href="#crear">Crear Taller</a></li>
+        <li><a href="Inscripcion.html">Inscripción</a></li>
+        
+      </ul>
+      <ul class="menu-derecha">
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+          <h2>Bienvenidos a Capotillo Talleres</h2>
+          <p >Este espacio impulsa la creatividad de los jóvenes en Capotillo mediante talleres de arte y música.</p>
+
+      </div>
+  </section>
+    <section id="talleres" class="seccion">
+      <h2>Lista de Talleres</h2>
+      <div id="listaTalleres" class="contenedor-talleres"></div>
+    </section>
+    <section class="talleres">
+      <h2>Talleres Disponibles</h2>
+        
+          <div class="talleres-contenedor">
+            <div class="taller-card">
+              <h3>Pintura para Jóvenes</h3>
+              <p>🕒 Martes y Jueves - 3:00 PM</p>
+              <p>🎟️ Cupos disponibles: 5</p>
+              <button onclick="location.href='Inscripcion.html'">Inscribirse</button>
+            </div>
+        
+            <div class="taller-card">
+              <h3>Iniciación Musical</h3>
+              <p>🕒 Sábado - 10:00 AM</p>
+              <p>🎟️ Cupos disponibles: 3</p>
+              <button onclick="location.href='Inscripcion.html'">Inscribirse</button>
+            </div>
+          </div>
+        </section>
+  
+
+    <section id="crear" class="seccion">
+      <h2>Crear Nuevo Taller</h2>
+      <form id="tallerForm">
+        <input type="text" id="titulo" placeholder="Título del taller" required>
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <input type="number" id="cupo" placeholder="Cupo disponible" required>
+        <input type="datetime-local" id="fecha" required>
+        <button type="submit">Crear Taller</button>
+      </form>
+    </section>
+
+    <section id="filtro" class="seccion">
+      <h2>Filtrar Talleres por Cupo</h2>
+      <input type="number" id="filtroCupo" placeholder="Cupo mínimo">
+      <button id="btnFiltrar">Filtrar</button>
+    </section>
+  </main>
+
+<!-- Font Awesome para íconos -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+  <footer class="footer">
+    <div class="footer-section">
+    <h3><i class="fas fa-paint-brush"></i>Capotillo Talleres</h3>
+    <p>© 2025 Todos los derechos reservados.</p>
+    </div>
+    <div class="footer-section">
+    <h4>Enlaces</h4>
+    <a href="index.html">Inicio</a>
+        <a href="Talle.html">Talleres</a>
+       <a href="#crear">Crear Taller</a>
+       <a href="Inscripcion.html">Inscripción</a>
+    </div>
+    <div class="footer-section">
+    <h4>Redes Sociales</h4>
+    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+    <div class="footer-section">
+    <h4>Contacto</h4>
+    <p>Email: contacto@capotalleres.com</p>
+    <p>Tel: +1 (809) 555-1234</p>
+    <p>Ubicación: Santo Domingo, RD</p>
+    <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Ir arriba ↑</button>
+    </div>
+    </footer>
+ 
+  <script src="app.js"></script>
+<!-- Font Awesome para íconos -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+<!-- Tu script principal -->
+<script src="app.js"></script>
+
+<!-- AOS Library (correcto, al final) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init(); // Inicializa AOS después de cargar su script
+</script>
+
+</body>
+</html>
